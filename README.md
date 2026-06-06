@@ -41,16 +41,17 @@ Prediksi laju pertumbuhan ekonomi (GDP Growth) Indonesia menggunakan indikator e
 
 ### Variabel yang Digunakan
 
-| Variabel | Keterangan | Satuan |
-|----------|------------|--------|
-| GDP Growth | Pertumbuhan ekonomi Indonesia | % per tahun |
-| Inflation | Tingkat inflasi tahunan | % |
-| Unemployment | Tingkat pengangguran | % dari angkatan kerja |
-| Population Growth | Pertumbuhan populasi tahunan | % |
-| Exports | Nilai ekspor barang dan jasa | % dari GDP |
-| Imports | Nilai impor barang dan jasa | % dari GDP |
-| FDI | Foreign Direct Investment | % dari GDP |
-| Exchange Rate | Nilai tukar Rupiah terhadap USD | IDR/USD |
+| Variabel              | Deskripsi                                            | Sumber Data                                                                                                                  |
+| --------------------- | ---------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| **GDP Growth**        | Target — Pertumbuhan ekonomi Indonesia (% per tahun) | [NY.GDP.MKTP.KD.ZG (GDP Growth)](https://data.worldbank.org/indicator/NY.GDP.MKTP.KD.ZG?locations=ID&utm_source=chatgpt.com) |
+| **Inflation**         | Tingkat inflasi tahunan (%)                          | [FP.CPI.TOTL.ZG (Inflation CPI)](https://data.worldbank.org/indicator/FP.CPI.TOTL.ZG?locations=ID&utm_source=chatgpt.com)    |
+| **Unemployment**      | Tingkat pengangguran (% dari angkatan kerja)         | [SL.UEM.TOTL.ZS (Unemployment)](https://data.worldbank.org/indicator/SL.UEM.TOTL.ZS?locations=ID&utm_source=chatgpt.com)     |
+| **Population Growth** | Pertumbuhan populasi tahunan (%)                     | [SP.POP.GROW (Population Growth)](https://data.worldbank.org/indicator/SP.POP.GROW?locations=ID&utm_source=chatgpt.com)      |
+| **Exports**           | Nilai ekspor barang dan jasa (% dari GDP)            | [NE.EXP.GNFS.ZS (Exports)](https://data.worldbank.org/indicator/NE.EXP.GNFS.ZS?locations=ID&utm_source=chatgpt.com)          |
+| **Imports**           | Nilai impor barang dan jasa (% dari GDP)             | [NE.IMP.GNFS.ZS (Imports)](https://data.worldbank.org/indicator/NE.IMP.GNFS.ZS?locations=ID&utm_source=chatgpt.com)          |
+| **FDI**               | Foreign Direct Investment (% dari GDP)               | [BX.KLT.DINV.WD.GD.ZS (FDI)](https://data.worldbank.org/indicator/BX.KLT.DINV.WD.GD.ZS?locations=ID&utm_source=chatgpt.com)  |
+| **Exchange Rate**     | Nilai tukar Rupiah terhadap USD                      | [PA.NUS.FCRF (Exchange Rate)](https://data.worldbank.org/indicator/PA.NUS.FCRF?locations=ID&utm_source=chatgpt.com)          |
+
 
 ---
 
