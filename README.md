@@ -11,15 +11,16 @@ Prediksi laju pertumbuhan ekonomi (GDP Growth) Indonesia menggunakan indikator e
 
 ## 👥 Tim Kelompok 1
 
-| No | Nama | Peran | Branch |
-|----|------|-------|--------|
-| 1  | Daifa Maulana | Project Manager & GitHub Manager | `main` / `develop` |
-| 2  | Mochamad Firmansyah | Data Collection & Dataset Management | `feature/data-collection` |
-| 3  | Fajar Muhammad Ramdhani | EDA & Visualisasi | `feature/eda-visualization` |
-| 4  | Fauzi Rizky Maulana | Data Preparation & Preprocessing | `feature/preprocessing` |
-| 5  | Muhammad Raufan Umarulloh | Machine Learning Engineer | `feature/modeling` |
-| 6  | Nazwa Nur Hapidah | UI/UX & Streamlit Frontend | `feature/streamlit-ui` |
-| 7  | Dini Sriastuti | Backend Streamlit & Deployment | `feature/streamlit-backend` |
+| No | Nama                      | Peran              | Branch                  |
+| -- | ------------------------- | ------------------ | ----------------------- |
+| 1  | Daifa Maulana             | Project Manager    | `main` / `develop`      |
+| 2  | Mochamad Firmansyah       | Data Analyst       | `feature/data-analysis` |
+| 3  | Fauzi Rizky Maulana       | Data Analyst       | `feature/data-analysis` |
+| 4  | Nazwa Nur Hapidah         | UI/UX Designer     | `feature/ui-ux`         |
+| 5  | Dini Sriastuti            | Frontend Developer | `feature/frontend`      |
+| 6  | Muhammad Raufan Umarulloh | Frontend Developer | `feature/frontend`      |
+| 7  | Fajar Muhammad Ramdhani   | Backend Developer  | `feature/backend`       |
+
 
 ---
 
@@ -168,16 +169,15 @@ Kelompok1-ML/
 
 ## 🌿 Struktur Branch
 
-| Branch | Fungsi |
-| --- | --- |
-| `main` | Branch utama — hanya kode final via Pull Request |
-| `develop` | Branch integrasi semua fitur |
-| `feature/data-collection` | Pengumpulan dan validasi data |
-| `feature/eda-visualization` | EDA dan visualisasi |
-| `feature/preprocessing` | Preprocessing dan normalisasi |
-| `feature/modeling` | Training dan evaluasi model ML |
-| `feature/streamlit-ui` | Desain dan layout halaman Streamlit |
-| `feature/streamlit-backend` | Integrasi model dan deployment |
+| Branch                  | Fungsi                                                          |
+| ----------------------- | --------------------------------------------------------------- |
+| `main`                  | Branch utama (rilis final)                                      |
+| `develop`               | Branch integrasi seluruh fitur                                  |
+| `feature/data-analysis` | Pengumpulan data, EDA, preprocessing, dan analisis data         |
+| `feature/ui-ux`         | Wireframe, desain UI, dan prototipe Streamlit                   |
+| `feature/frontend`      | Implementasi tampilan Streamlit berdasarkan desain UI/UX        |
+| `feature/backend`       | Integrasi model Machine Learning, prediksi, dan pengolahan data |
+
 
 ---
 
