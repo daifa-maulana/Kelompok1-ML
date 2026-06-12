@@ -98,4 +98,6 @@ gitmoji -c
 
 ---
 
+> Catatan: Jika kamu ingin mengedit instruksi ini sendiri, cukup ubah file `docs/UPLOAD_INSTRUCTIONS.md` di branch baru, commit, lalu push.
+
 Jika mau, saya bisa generate pesan PR template singkat untuk tiap tugas atau menambahkan checklist ke `PULL_REQUEST_TEMPLATE.md`.
