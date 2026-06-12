@@ -1,0 +1,14 @@
+.venv/
+env/
+*.pyc
+__pycache__/
+.ipynb_checkpoints/
+.env
+venv/
+dist/
+build/
+.pytest_cache/
+*.pkl
+*.h5
+/.vscode/
+/.idea/
