@@ -1,0 +1,67 @@
+{
+  "forecast_years": [
+    2026,
+    2027,
+    2028,
+    2029,
+    2030,
+    2031
+  ],
+  "gdp_forecasts": {
+    "Linear Regression": [
+      5.1938,
+      5.2438,
+      5.2938,
+      5.3438,
+      5.3938,
+      5.4438
+    ],
+    "Ridge Regression": [
+      5.0374,
+      5.0874,
+      5.1374,
+      5.1874,
+      5.2374,
+      5.2874
+    ],
+    "Decision Tree": [
+      4.7159,
+      4.7659,
+      4.8159,
+      4.8659,
+      4.9159,
+      4.9659
+    ],
+    "Random Forest": [
+      4.1831,
+      4.2331,
+      4.2831,
+      4.3331,
+      4.3831,
+      4.4331
+    ]
+  },
+  "best_model": "Random Forest",
+  "countries": [
+    "Brunei",
+    "Cambodia",
+    "Indonesia",
+    "Laos",
+    "Malaysia",
+    "Philippines",
+    "Singapore",
+    "Thailand",
+    "Vietnam"
+  ],
+  "features": [
+    "GDP_Per_Capita",
+    "Population_Growth",
+    "Exports_pct",
+    "Imports_pct",
+    "Life_Expectancy",
+    "GDP_Growth_lag1",
+    "GDP_Growth_lag2",
+    "GDP_lag1"
+  ],
+  "note": "Forecast dihasilkan dari rata-rata prediksi semua negara ASEAN"
+}
