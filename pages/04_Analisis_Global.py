@@ -1,7 +1,14 @@
 import streamlit as st
 import pandas as pd
 from utils.navigation import show_navbar
-from utils.world_data import load_asean_data, get_map_data, get_country_list
+# from utils.world_data import load_asean_data, get_map_data, get_country_list
+
+try:
+    from utils.world_data import load_asean_data, get_map_data, get_country_list
+    WORLD_DATA_READY = True
+except ModuleNotFoundError:
+    WORLD_DATA_READY = False
+
 from utils.predictor import predict_future
 
 try:
@@ -19,8 +26,15 @@ st.set_page_config(
 
 show_navbar()
 
-with open("assets/style.css") as f:
-    st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
+# with open("assets/style.css") as f:
+#     st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
+
+# CSS sementara - tunggu Nazwa push style.css kalo udah hapus try ini sampe pass yang diatas hapus pagar nya
+try:
+    with open("assets/style.css") as f:
+        st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
+except FileNotFoundError:
+    pass
 
 st.title("🌍 Analisis ASEAN")
 st.markdown("Peta interaktif dan forecasting GDP Growth negara-negara ASEAN.")

@@ -1,7 +1,13 @@
 import streamlit as st
 import json
 from utils.navigation import show_navbar
-from utils.predictor import predict_all_models
+# from utils.predictor import predict_all_models
+
+try:
+    from utils.predictor import predict_all_models
+    PREDICTOR_READY = True
+except ImportError:
+    PREDICTOR_READY = False
 
 st.set_page_config(
     page_title="Prediksi — GDP ASEAN",
@@ -12,8 +18,15 @@ st.set_page_config(
 
 show_navbar()
 
-with open("assets/style.css") as f:
-    st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
+# with open("assets/style.css") as f:
+#     st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
+
+# CSS sementara - tunggu Nazwa push style.css kalo udah hapus try ini sampe pass yang diatas hapus pagar nya
+try:
+    with open("assets/style.css") as f:
+        st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
+except FileNotFoundError:
+    pass
 
 st.title("🤖 Prediksi GDP Growth")
 st.markdown("Masukkan indikator ekonomi untuk prediksi dari 4 model sekaligus.")

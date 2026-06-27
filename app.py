@@ -12,8 +12,15 @@ st.set_page_config(
 
 show_navbar()
 
-with open("assets/style.css") as f:
-    st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
+# with open("assets/style.css") as f:
+#     st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
+
+# CSS sementara - tunggu Nazwa push style.css kalo udah hapus try ini sampe pass yang diatas hapus pagar nya
+try:
+    with open("assets/style.css") as f:
+        st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
+except FileNotFoundError:
+    pass
 
 st.title("🌏 Prediksi GDP Growth Asia Tenggara")
 st.markdown("Dashboard analisis dan prediksi pertumbuhan ekonomi negara-negara ASEAN.")
