@@ -55,3 +55,50 @@ def save_to_json(data: dict, file_path: str) -> bool:
     except IOError as e:
         print(f"Gagal menulis file ke {file_path}: {e}")
         return False
+
+import pandas as pd
+
+
+def load_asean_data(csv_path: str = "data/processed/dataset_asean.csv") -> pd.DataFrame:
+    """
+    Load dataset ASEAN dari CSV lokal (sumber data utama).
+    """
+    return pd.read_csv(csv_path)
+
+
+def get_country_list(df: pd.DataFrame) -> list:
+    """
+    Mengambil daftar negara unik yang tersedia di dataset.
+    """
+    return sorted(df["Country"].unique().tolist())
+
+
+def get_map_data(df: pd.DataFrame, year: int) -> list:
+    """
+    Menyiapkan data untuk peta interaktif ECharts pada tahun tertentu.
+    Format: [{"name": "Indonesia", "value": 5.2}, ...]
+    """
+    df_year = df[df["Year"] == year][["Country", "GDP_Growth"]]
+    return [
+        {"name": row["Country"], "value": row["GDP_Growth"]}
+        for _, row in df_year.iterrows()
+    ]
+
+
+def get_region_data(df: pd.DataFrame, countries: list) -> pd.DataFrame:
+    """
+    Filter data untuk sekelompok negara tertentu (per region).
+    """
+    return df[df["Country"].isin(countries)].copy()
+
+
+def enrich_with_external_data(df: pd.DataFrame, country_code: str, api_url: str = None) -> dict:
+    """
+    Fitur opsional: melengkapi data lokal dengan data tambahan dari API eksternal.
+    Memakai fetch_world_data() dan process_country_data() yang sudah ada di atas.
+    Tidak wajib dipanggil — dataset CSV lokal sudah cukup untuk kebutuhan utama.
+    """
+    if not api_url:
+        return {}
+    raw_data = fetch_world_data(api_url)
+    return process_country_data(raw_data, country_code)
