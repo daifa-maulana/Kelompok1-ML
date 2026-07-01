@@ -1,0 +1,10 @@
+[
+  "GDP_Per_Capita",
+  "Population_Growth",
+  "Exports_pct",
+  "Imports_pct",
+  "Life_Expectancy",
+  "GDP_Growth_lag1",
+  "GDP_Growth_lag2",
+  "GDP_lag1"
+]
